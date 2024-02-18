@@ -1,15 +1,23 @@
 import java.awt.*;
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        // casting
-        // byte > short > int > long > float > double (automatically)
-        double x = 1.1;
-        double y = (int)x + 2; // float to Integer
-        String a = "525";
-        System.out.println(Integer.parseInt(a));// String to Integer
+//        Math class
+        int resutl1 = Math.round(1.1F);
+        int resutl2 = (int)Math.ceil(1.1F);
+        int resutl3 = Math.max(5,8);
+        int resutl4 = (int) (Math.random()*100);
+//        Formating Nums
+        NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
+        NumberFormat percentInstance = NumberFormat.getPercentInstance();
+        String rslt = percentInstance.format(0.5);
+        System.out.println(rslt);
+//        shift + f6 to change variable name
     }
 
 
